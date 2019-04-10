@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="我的博客">
 <meta property="og:description" content="前言在一些前端框架中，例如 angular，vue都有数据双向数据绑定的功能，这个功能极大的方便我们操作数据。那么接下来我会讲解一下双向数据绑定的4种实现方式。 方式1.手动触发绑定手动触发绑定的主要思路是通过在数据对象定义 get 和 set 方法(可以使用其他的命名方法)，调用时手动去触发 get 和 set 方法去获取数据，修改数据，改变数据后会主动去触发 get 和 set 函数中视图层的">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-07T14:24:25.757Z">
+<meta property="og:updated_time" content="2019-04-10T07:21:08.897Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="四种方法实现数据双向绑定">
 <meta name="twitter:description" content="前言在一些前端框架中，例如 angular，vue都有数据双向数据绑定的功能，这个功能极大的方便我们操作数据。那么接下来我会讲解一下双向数据绑定的4种实现方式。 方式1.手动触发绑定手动触发绑定的主要思路是通过在数据对象定义 get 和 set 方法(可以使用其他的命名方法)，调用时手动去触发 get 和 set 方法去获取数据，修改数据，改变数据后会主动去触发 get 和 set 函数中视图层的">
@@ -384,13 +384,9 @@
                 
               
 
-              <time title="创建时间：2019-04-07 22:12:01 / 修改时间：22:24:25" itemprop="dateCreated datePublished" datetime="2019-04-07T22:12:01+08:00">2019-04-07</time>
+              <time title="创建时间：2019-04-07 22:12:01" itemprop="dateCreated datePublished" datetime="2019-04-07T22:12:01+08:00">2019-04-07</time>
             
 
-            
-              
-
-              
             
           </span>
 
@@ -399,13 +395,61 @@
           
             
             
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/2019/04/07/四种方法实现数据双向绑定/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/04/07/四种方法实现数据双向绑定/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
           
 
           
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
 
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">221</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">1 分钟</span>
+              
+            </div>
           
 
           
@@ -426,13 +470,24 @@
         <p>前言<br>在一些前端框架中，例如 angular，vue都有数据双向数据绑定的功能，这个功能极大的方便我们操作数据。那么接下来我会讲解一下双向数据绑定的4种实现方式。</p>
 <p>方式<br>1.手动触发绑定<br>手动触发绑定的主要思路是通过在数据对象定义 get 和 set 方法(可以使用其他的命名方法)，调用时手动去触发 get 和 set 方法去获取数据，修改数据，改变数据后会主动去触发 get 和 set 函数中视图层的重新渲染。</p>
 <p>简单的手动触发绑定代码如下：</p>
-<p>————-本文结束感谢您的阅读————-</p>
 
       
     </div>
 
     
 
+    <div>
+      
+          <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:16px;">
+              -------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------
+        </div>
+    
+</div>
+      
+    </div>
+
     
     
     
@@ -443,7 +498,64 @@
       
     
     
+      <div>
+        <div id="reward-container">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
 
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/wechatpay.png" alt="June Richard 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/alipay.png" alt="June Richard 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        
+
+
+
+
+  
+
+
+
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>June Richard</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    
+    <a href="https://blog2018.github.io/2019/04/07/四种方法实现数据双向绑定/" title="四种方法实现数据双向绑定">https://blog2018.github.io/2019/04/07/四种方法实现数据双向绑定/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
     
 
     <footer class="post-footer">
@@ -496,6 +608,13 @@
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+      </div>
+    </div>
 
   
 
@@ -639,9 +758,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <script async src="/js/js/busuanzi.pure.mini.js"></script>
-
-<div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; 2018 – <span itemprop="copyrightYear">2019</span>
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
@@ -651,32 +768,25 @@
 
   
 </div>
-<div class="powered-by">
-<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
- 访问用户: <span id="busuanzi_value_site_uv"></span> 
-</span>
-</div>
-
-
-  <span class="post-meta-divider">|</span>
-
-
-<span id="busuanzi_container_site_pv">
- 访问量: <span id="busuanzi_value_site_pv"></span> 次
-</span>
-
-
-  <span class="post-meta-divider">|</span>
-
 
 <div class="theme-info">
  <div class="powered-by"></div>
- <span class="post-count">博客全站共 2.4k 字</span>
+ <span class="post-count">博客全站共 2.3k 字</span>
 </div>
 
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+
+  
+
+  
+</div>
+
 
 
 
@@ -780,6 +890,27 @@
   
 
   
+  
+
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://blog2018.github.io/2019/04/07/四种方法实现数据双向绑定/";
+    this.page.identifier = "2019/04/07/四种方法实现数据双向绑定/";
+    this.page.title = '四种方法实现数据双向绑定';
+    };
+  function loadComments() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', '' + +new Date());
+    (d.head || d.body).appendChild(s);
+  }
+  
+    loadComments();
+  
+</script>
+
+
+
 
 
   
