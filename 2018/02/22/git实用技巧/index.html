@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="git实用技巧&amp;lt;p&amp;gt;Git的奇技淫巧是github上的一个git使用技巧合集，没有谈原理方面的内容，有很多小tips很有用，这里记录一下我还不太会用的。&amp;lt;/p&amp;gt; Git的奇技淫巧：链接 回到远程仓库的状态抛弃本地所有的修改，回到远程仓库的状态。 1git fetch –all &amp;amp;&amp;amp; git reset –hard origin/master 重设第一个com">
+  <meta name="description" content="git实用技巧Git的奇技淫巧是github上的一个git使用技巧合集，没有谈原理方面的内容，有很多小tips很有用，这里记录一下我还不太会用的。 Git的奇技淫巧：链接 回到远程仓库的状态抛弃本地所有的修改，回到远程仓库的状态。 1git fetch –all &amp;amp;&amp;amp; git reset –hard origin/master 重设第一个commit清空所有的commit，可以重新">
 <meta name="keywords" content="git">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git实用技巧">
 <meta property="og:url" content="https://isouu.github.io/2018/02/22/git实用技巧/index.html">
 <meta property="og:site_name" content="我的博客">
-<meta property="og:description" content="git实用技巧&amp;lt;p&amp;gt;Git的奇技淫巧是github上的一个git使用技巧合集，没有谈原理方面的内容，有很多小tips很有用，这里记录一下我还不太会用的。&amp;lt;/p&amp;gt; Git的奇技淫巧：链接 回到远程仓库的状态抛弃本地所有的修改，回到远程仓库的状态。 1git fetch –all &amp;amp;&amp;amp; git reset –hard origin/master 重设第一个com">
+<meta property="og:description" content="git实用技巧Git的奇技淫巧是github上的一个git使用技巧合集，没有谈原理方面的内容，有很多小tips很有用，这里记录一下我还不太会用的。 Git的奇技淫巧：链接 回到远程仓库的状态抛弃本地所有的修改，回到远程仓库的状态。 1git fetch –all &amp;amp;&amp;amp; git reset –hard origin/master 重设第一个commit清空所有的commit，可以重新">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-10T13:32:07.262Z">
+<meta property="og:updated_time" content="2019-04-10T14:21:39.623Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git实用技巧">
-<meta name="twitter:description" content="git实用技巧&amp;lt;p&amp;gt;Git的奇技淫巧是github上的一个git使用技巧合集，没有谈原理方面的内容，有很多小tips很有用，这里记录一下我还不太会用的。&amp;lt;/p&amp;gt; Git的奇技淫巧：链接 回到远程仓库的状态抛弃本地所有的修改，回到远程仓库的状态。 1git fetch –all &amp;amp;&amp;amp; git reset –hard origin/master 重设第一个com">
+<meta name="twitter:description" content="git实用技巧Git的奇技淫巧是github上的一个git使用技巧合集，没有谈原理方面的内容，有很多小tips很有用，这里记录一下我还不太会用的。 Git的奇技淫巧：链接 回到远程仓库的状态抛弃本地所有的修改，回到远程仓库的状态。 1git fetch –all &amp;amp;&amp;amp; git reset –hard origin/master 重设第一个commit清空所有的commit，可以重新">
 
 
 
@@ -433,7 +433,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">709</span>
+                <span title="本文字数">677</span>
               
 
               
@@ -467,7 +467,7 @@
       
 
       
-        <h1 id="git实用技巧"><a href="#git实用技巧" class="headerlink" title="git实用技巧"></a><center>git实用技巧</center></h1><pre><code>&lt;p&gt;Git的奇技淫巧是github上的一个git使用技巧合集，没有谈原理方面的内容，有很多小tips很有用，这里记录一下我还不太会用的。&lt;/p&gt;
+        <h1 id="git实用技巧"><a href="#git实用技巧" class="headerlink" title="git实用技巧"></a><center>git实用技巧</center></h1><pre><code>Git的奇技淫巧是github上的一个git使用技巧合集，没有谈原理方面的内容，有很多小tips很有用，这里记录一下我还不太会用的。
 </code></pre><p></p><p>Git的奇技淫巧：<a href="https://github.com/521xueweihan/git-tips" target="_blank" rel="noopener">链接</a></p><br><a id="more"></a><p></p>
 <p></p><h5 id="回到远程仓库的状态"><a href="#回到远程仓库的状态" class="headerlink" title="回到远程仓库的状态"></a>回到远程仓库的状态</h5><p>抛弃本地所有的修改，回到远程仓库的状态。</p><p></p>
 <p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git fetch –all &amp;&amp; git reset –hard origin/master</span><br></pre></td></tr></table></figure></p>
@@ -485,8 +485,7 @@
 <p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset -soft HEAD~3</span><br></pre></td></tr></table></figure><br></p>
 <p><li><p>回到某一个commit，暂存区和工作区变为指定commit版本的内容</p></li></p>
 <p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset -hard &lt;commit-id&gt;</span><br></pre></td></tr></table></figure><br><br></p></ul><p></p>
-<pre><code>&lt;/div&gt;
-</code></pre>
+
       
     </div>
 
@@ -793,7 +792,7 @@
 
 <div class="theme-info">
  <div class="powered-by"></div>
- <span class="post-count">博客全站共 303 字</span>
+ <span class="post-count">博客全站共 293 字</span>
 </div>
 
 
