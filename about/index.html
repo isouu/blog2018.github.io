@@ -98,10 +98,10 @@
 
   <meta property="og:type" content="website">
 <meta property="og:title" content="about">
-<meta property="og:url" content="https://blog2018.github.io/about/index.html">
+<meta property="og:url" content="https://isouu.github.io/about/index.html">
 <meta property="og:site_name" content="我的博客">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-07T11:13:21.211Z">
+<meta property="og:updated_time" content="2019-04-10T13:05:36.578Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="about">
 
@@ -111,7 +111,7 @@
 
   
   
-  <link rel="canonical" href="https://blog2018.github.io/about/">
+  <link rel="canonical" href="https://isouu.github.io/about/">
 
 
 
@@ -390,17 +390,6 @@
           </div>
           
 
-  
-    <div class="comments" id="comments">
-      <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
-      </div>
-    </div>
-
-  
-
-
-
         </div>
         
           
@@ -437,7 +426,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">1</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -458,13 +447,7 @@
                     
                       
                     
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-count">1</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -547,14 +530,14 @@
 
   
 
+
   
 </div>
 
 <div class="theme-info">
  <div class="powered-by"></div>
- <span class="post-count">博客全站共 2.3k 字</span>
+ <span class="post-count">博客全站共 303 字</span>
 </div>
-
 
 
         
@@ -673,28 +656,35 @@
   
   
 
+<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script>
+
 <script>
-  var disqus_config = function() {
-    this.page.url = "https://blog2018.github.io/about/index.html";
-    this.page.identifier = "about/index.html";
-    this.page.title = 'about';
-    };
-  function loadComments() {
-    var d = document, s = d.createElement('script');
-    s.src = 'https://.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', '' + +new Date());
-    (d.head || d.body).appendChild(s);
-  }
-  
-    loadComments();
-  
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    app_id: 'UnFMdiGpkHFXYvgXI4K83PKj-gzGzoHsz',
+    app_key: 'mLpG4ejuY12Ux1qW3kq3nTUc',
+    placeholder: 'ヾﾉ≧∀≦)o 来呀！吐槽一番吧!',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: '' || 'zh-cn'
+  });
 </script>
 
 
 
-
-
-  
 
 
   

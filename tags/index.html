@@ -98,10 +98,10 @@
 
   <meta property="og:type" content="website">
 <meta property="og:title" content="标签">
-<meta property="og:url" content="https://blog2018.github.io/tags/index.html">
+<meta property="og:url" content="https://isouu.github.io/tags/index.html">
 <meta property="og:site_name" content="我的博客">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-07T11:24:57.583Z">
+<meta property="og:updated_time" content="2019-04-10T13:06:07.778Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="标签">
 
@@ -111,7 +111,7 @@
 
   
   
-  <link rel="canonical" href="https://blog2018.github.io/tags/">
+  <link rel="canonical" href="https://isouu.github.io/tags/">
 
 
 
@@ -378,23 +378,11 @@
                   
                 
               
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-              目前共计 4 个标签
+              目前共计 1 个标签
             </div>
             <div class="tag-cloud-tags">
               
-                <a href="/tags/next/" style="font-size: 12px; color: #ccc">next</a> <a href="/tags/备忘/" style="font-size: 12px; color: #ccc">备忘</a> <a href="/tags/搭建博客/" style="font-size: 12px; color: #ccc">搭建博客</a> <a href="/tags/编辑器/" style="font-size: 12px; color: #ccc">编辑器</a>
+                <a href="/tags/git/" style="font-size: 12px; color: #ccc">git</a>
               
             </div>
           </div>
@@ -416,17 +404,6 @@
 
           </div>
           
-
-  
-    <div class="comments" id="comments">
-      <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
-      </div>
-    </div>
-
-  
-
-
 
         </div>
         
@@ -464,7 +441,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">1</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -485,13 +462,7 @@
                     
                       
                     
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-count">1</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -574,14 +545,14 @@
 
   
 
+
   
 </div>
 
 <div class="theme-info">
  <div class="powered-by"></div>
- <span class="post-count">博客全站共 2.3k 字</span>
+ <span class="post-count">博客全站共 303 字</span>
 </div>
-
 
 
         
@@ -700,28 +671,35 @@
   
   
 
+<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script>
+
 <script>
-  var disqus_config = function() {
-    this.page.url = "https://blog2018.github.io/tags/index.html";
-    this.page.identifier = "tags/index.html";
-    this.page.title = '标签';
-    };
-  function loadComments() {
-    var d = document, s = d.createElement('script');
-    s.src = 'https://.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', '' + +new Date());
-    (d.head || d.body).appendChild(s);
-  }
-  
-    loadComments();
-  
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    app_id: 'UnFMdiGpkHFXYvgXI4K83PKj-gzGzoHsz',
+    app_key: 'mLpG4ejuY12Ux1qW3kq3nTUc',
+    placeholder: 'ヾﾉ≧∀≦)o 来呀！吐槽一番吧!',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: '' || 'zh-cn'
+  });
 </script>
 
 
 
-
-
-  
 
 
   
